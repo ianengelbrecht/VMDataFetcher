@@ -18,6 +18,7 @@ module.exports = async function(project, callParamsObject, postFilterKey, postFi
   }
   
   fetchURL += `&API_KEY=${API_KEY}`
+  fetchURL = encodeURI(fetchURL)
 
   console.log(fetchURL)
 

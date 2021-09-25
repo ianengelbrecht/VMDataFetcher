@@ -4,13 +4,18 @@ var os = require('os')
 
 var fetchRecords = require('./fetchData')
 
-var project = 'spidermap'
+var project = 'scorpionmap'
 
+//TODO allow for searching multiple taxa
 var filters = {
-  //bbox: '-30.190425,21.235134,-31.210631,22.932522',
-  taxon: 'Theraphosidae',
-  //geo: 'Namibia'
+  //bbox: '-30.49725, 21.99429,-30.70354, 22.44953',
+  taxon: 'Opistophthalmus pugnax',
+  //geo: 'Zimbabwe'
 }
+
+csvFile = 'pugnax.csv'
+
+//htmlFile = 'ZimTheraphosidae.html'
 
 /*
 var postFilterKey = 'recordedBy'
@@ -24,16 +29,13 @@ var postFilterMethod = null
 
 var API_KEY = 'db1dfbcc0491a747eb6a0ca5c8bc2ef5'
 
-csvFile = 'theraphosidae20200104.csv'
-
-htmlFile = 'UroPlanNamibia.html'
 
 //what format to write out the results as
 format = 'csv'
 
 console.log('fetching records')
 
-fetchRecords(project, filters, postFilterKey, postFilterVal, postFilterMethod, API_KEY, format)
+fetchRecords(project, filters, postFilterKey, postFilterVal, postFilterMethod, API_KEY)
   .then(results => {
 
     if (results.length == 0){
@@ -49,9 +51,10 @@ fetchRecords(project, filters, postFilterKey, postFilterVal, postFilterMethod, A
       var ws = fs.createWriteStream(csvFile);
       csv
         .write(results, {headers: true})
-        .pipe(ws);
+        .pipe(ws)
+        .on('finish', _ => console.log('done writing CSV'));
   
-      console.log('done writing CSV')
+      
     }
     else if (format == 'html') {
       var htmlBody = ""

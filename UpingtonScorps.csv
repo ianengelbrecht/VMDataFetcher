@@ -1,0 +1,18 @@
+vmNumber,institutionCode,URL,scientificName,country,stateProvince,verbatimLocality,decimalLatitude,decimalLongitude,eventDate,recordedBy
+259,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-259,Parabuthus schlechteri,South Africa,Northern Cape,R360 Road,-28.37622,21.159638,2011-12-31,Allison Sharp;Vaughan Jessnitz
+260,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-260,Parabuthus capensis,South Africa,Northern Cape,R360 Road,-28.37622,21.159638,2011-12-31,Allison Sharp;Vaughan Jessnitz
+261,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-261,Parabuthus granulatus,South Africa,Northern Cape,R360 Road,-28.37622,21.159638,2011-12-31,Allison Sharp;Vaughan Jessnitz
+430,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-430,Parabuthus granulatus,South Africa,Northern Cape,"Monate (Spitskop) Lodge, 5km N of Upington",-28.37874,21.157822,2014-02-04,Jessnitz Richard
+474,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-474,Parabuthus granulatus,South Africa,Northern Cape,"Monate Lodge, 5km North of Upington",-28.37943,21.157007,2014-03-19,"Jessnitz Richard; van Rooyen, B."
+475,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-475,Parabuthus laevifrons,South Africa,Northern Cape,"Monate Lodge, 5km North of Upington",-28.37943,21.157007,2014-03-19,"Jessnitz Richard; van Rooyen, B."
+476,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-476,Opistophthalmus carinatus,South Africa,Northern Cape,"Monate Lodge, 5km North of Upington",-28.37943,21.157007,2014-03-19,"Jessnitz Richard; van Rooyen, B."
+477,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-477,Opistophthalmus carinatus,South Africa,Northern Cape,"Monate Lodge, 5km North of Upington",-28.37943,21.157007,2014-03-19,"Jessnitz Richard; van Rooyen, B."
+699,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-699,Parabuthus raudus,South Africa,Northern Cape,Kleinbegin Railway post. Moth lights set up around farm house and surrounding area.,-28.90971,21.694155,2014-11-09,Jessnitz V; Richard Jessnitz
+700,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-700,Parabuthus raudus,South Africa,Northern Cape,Kleinbegin Railway post. Moth lights set up around farm house and surrounding area.,-28.90971,21.694155,2014-11-09,Jessnitz V; Richard Jessnitz
+701,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-701,Parabuthus granulatus,South Africa,Northern Cape,Kleinbegin Railway post. Moth lights set up around farm house and surrounding area.,-28.90971,21.694155,2014-11-09,Jessnitz V; Richard Jessnitz
+702,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-702,Parabuthus raudus,South Africa,Northern Cape,Kleinbegin Railway post. Moth lights set up around farm house and surrounding area.,-28.90971,21.694155,2014-11-09,Jessnitz V
+773,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-773,Parabuthus schlechteri,South Africa,Northern Cape,farm,-28.43569,21.695716,2014-12-28,Liebenberg Aletta Gesina
+1302,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-1302,Parabuthus schlechteri,South Africa,Northern Cape,farm,-28.43569,21.695716,2016-02-23,Liebenberg Aletta Gesina
+2349,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-2349,Hadogenes phyllodes,South Africa,Northern Cape,Farm Geel Kop,-28.58347,21.00909,2017-01-07,Jannes de Villiers
+2350,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-2350,Opistophthalmus lornae,South Africa,Northern Cape,Farm Geel Kop,-28.58347,21.00909,2017-01-07,Jannes de Villiers
+2368,ADU-UCT,http://vmus.adu.org.za/?vm=scorpionmap-2368,Uroplectes carinatus,South Africa,Northern Cape,Wildekeur farmhouse about 8 km from Upington on the N14,-28.50464,21.179221,2016-08-21,Rautenbach C
