@@ -8,12 +8,12 @@ var project = 'scorpionmap'
 
 //TODO allow for searching multiple taxa
 var filters = {
-  //bbox: '-30.49725, 21.99429,-30.70354, 22.44953',
-  taxon: 'Opistophthalmus pugnax',
-  //geo: 'Zimbabwe'
+  //bbox: '-25.712226, 29.344893,-25.855600, 29.644615',
+  taxon: 'Uroplectes marlothi',
+  //geo: 'Malawi'
 }
 
-csvFile = 'pugnax.csv'
+csvFile = 'VMUS Uro mar 20221017.csv'
 
 //htmlFile = 'ZimTheraphosidae.html'
 
