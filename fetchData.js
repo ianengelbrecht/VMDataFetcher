@@ -30,9 +30,11 @@ module.exports = async function(project, callParamsObject, postFilterKey, postFi
   }
 
   var data = JSON.parse(res)
+  let pagesFetched = 0
   if(data.results){
     addResults(project, results, data, postFilterKey, postFilterVal, postFilterMethod)
-
+    pagesFetched += 1
+    console.log('fetched', pagesFetched, 'page of resultes')
     //get all the records
     while(!data.meta.endOfRecords){
       try {
@@ -45,6 +47,8 @@ module.exports = async function(project, callParamsObject, postFilterKey, postFi
       data = JSON.parse(res)
       if(data.results){
         addResults(project, results, data, postFilterKey, postFilterVal, postFilterMethod)
+        pagesFetched += 1
+        console.log('fetched', pagesFetched, 'page of resultes')
       }
     }
   }

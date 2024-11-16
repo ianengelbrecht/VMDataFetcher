@@ -4,16 +4,16 @@ var os = require('os')
 
 var fetchRecords = require('./fetchData')
 
-var project = 'scorpionmap'
+var project = 'spidermap'
 
 //TODO allow for searching multiple taxa
 var filters = {
   //bbox: '-25.712226, 29.344893,-25.855600, 29.644615',
-  taxon: 'Uroplectes marlothi',
+  taxon: 'Theraphosidae',
   //geo: 'Malawi'
 }
 
-csvFile = 'VMUS Uro mar 20221017.csv'
+csvFile = 'Theraphosidae 20241116.csv'
 
 //htmlFile = 'ZimTheraphosidae.html'
 
