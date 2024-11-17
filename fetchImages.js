@@ -18,8 +18,7 @@ Papa.parse(fileStream, {
     const errors = {}
     for (const row of records) {
       try {
-        await fetchVMImages(project, row.vmNumber)
-        imageCount++
+        imageCount += await fetchVMImages(project, row.vmNumber)
       }
       catch(err) {
         errors[row.vmNumber] = err.toString()

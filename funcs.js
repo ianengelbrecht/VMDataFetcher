@@ -23,5 +23,7 @@ export default async function fetchVMImages(projectName, recordNumber) {
     fs.writeFileSync(`./images/${projectName}_${recordNumber}_${imageNumber}.jpg`, buffer)
     imageNumber++
   }
+
+  return imageNumber - 1
     
 }
