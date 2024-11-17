@@ -1,21 +1,21 @@
-var fs = require('fs')
-var csv = require('fast-csv')
-var os = require('os')
+// fetched records for a project, with options for filters
+// see fetchImges to fetch the images for the same records
 
-var fetchRecords = require('./fetchData')
+import fs from 'fs'
+import csv from 'fast-csv'
+import os from 'os'
+import fetchRecords from './fetchData.js'
 
-var project = 'spidermap'
+const project = 'spidermap'
 
 //TODO allow for searching multiple taxa
-var filters = {
+const filters = {
   //bbox: '-25.712226, 29.344893,-25.855600, 29.644615',
   taxon: 'Theraphosidae',
   //geo: 'Malawi'
 }
 
-csvFile = 'Theraphosidae 20241116.csv'
-
-//htmlFile = 'ZimTheraphosidae.html'
+const csvFile = 'Theraphosidae 20241116.csv'
 
 /*
 var postFilterKey = 'recordedBy'
@@ -23,15 +23,11 @@ var postFilterVal = 'Tippett'
 var postFilterMethod = 'like'
 */
 
-var postFilterKey = null
-var postFilterVal = null
-var postFilterMethod = null
+const postFilterKey = null
+const postFilterVal = null
+const postFilterMethod = null
 
-var API_KEY = 'db1dfbcc0491a747eb6a0ca5c8bc2ef5'
-
-
-//what format to write out the results as
-format = 'csv'
+const API_KEY = 'db1dfbcc0491a747eb6a0ca5c8bc2ef5'
 
 console.log('fetching records')
 
@@ -43,39 +39,13 @@ fetchRecords(project, filters, postFilterKey, postFilterVal, postFilterMethod, A
       return;
     }
 
-    //silent else
-
     console.log('Number of returned records: ' + results.length)
     
-    if (format == 'csv') {
-      var ws = fs.createWriteStream(csvFile);
-      csv
-        .write(results, {headers: true})
-        .pipe(ws)
-        .on('finish', _ => console.log('done writing CSV'));
-  
-      
-    }
-    else if (format == 'html') {
-      var htmlBody = ""
-      results.forEach(record => {
-        htmlBody += `<p><a href="${record.URL}">${record.URL}</a></p>${os.EOL}`
-      });
-      var createHTML = require('create-html')
-      
-      var html = createHTML({
-        title: 'example',
-        body: htmlBody
-      })
-      
-      fs.writeFile(htmlFile, html, function (err) {
-        if (err) console.log(err)
-        else {
-          console.log('Completed writing HTML file')
-        }
-      })
-    }
-    
+    const ws = fs.createWriteStream(csvFile);
+    csv
+      .write(results, {headers: true, quote: true, includeEndRowDelimiter: true})
+      .pipe(ws)
+      .on('finish', _ => console.log('done writing CSV'));
     
   })
   .catch(err => console.log(err))

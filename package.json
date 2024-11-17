@@ -2,14 +2,15 @@
   "name": "vmdatafetcher",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "app.js",
   "dependencies": {
     "create-html": "^4.1.0",
-    "fast-csv": "^2.4.1",
+    "fast-csv": "^5.0.2",
+    "papaparse": "^5.4.1",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5"
   },
-  "devDependencies": {},
   "scripts": {
     "dev": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
