@@ -7,6 +7,14 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Run Current File Node",
+      "program": "${file}",
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Test get records",
       "program": "${workspaceFolder}\\index.js"
     }
